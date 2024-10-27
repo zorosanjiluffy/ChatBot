@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4350f77c0f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/chatbot.png">
+
+</head>
+
+<body>
+
+    <div class="chatbot-popup">
+        <div class="chat-header">
+            <div class="header-info">
+                <img class="chatbot-logo" src="images/chatbot.png" width="50px" height="50px">
+
+
+                <h2 class="logo-text">chatbot</h2>
+
+            </div>
+            <button id="close-chatbox"><i class="fa-duotone fa-solid fa-angle-down"></i></button>
+
+        </div>
+
+        <!-- chat-body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <img class="bot-avatar" src="images/chatbot.png" width="50px" height="50px">
+                <div class="message-text">Hey there 👋 <br> How can I help you today?</div>
+            </div>
+
+
+        </div>
+
+
+        <!-- chat-footer -->
+
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea class="message-input" placeholder="Message..." required></textarea>
+                <div class="chat-controls">
+                    <button type="button" class="material-symbols-rounded"><i
+                            class="fa-regular fa-face-smile"></i></button>
+                    <div class="file-upload-wrapper">
+                        <input type="file" accept="images/*" id="file-input" hidden>
+                        <img src="#">
+                        <button type="button" id="file-upload" class="material-symbols-rounded"><i
+                                class="fa-sharp fa-solid fa-paperclip"></i></button>
+                        <!-- <button type="button" id="file-cancel" class="material-symbols-rounded"><i
+                                class="fa-solid fa-xmark"></i>
+                        </button> -->
+                    </div>
+
+                    <button id="send-message" type="submit" class="material-symbols-rounded"><i
+                            class="fa-solid fa-arrow-up"></i></button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
